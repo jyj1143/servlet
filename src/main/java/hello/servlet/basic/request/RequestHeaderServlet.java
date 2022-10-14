@@ -20,7 +20,7 @@ public class RequestHeaderServlet extends HttpServlet {
         printHeaderUtils(request);
         printEtc(request);
     }
-
+    //HTTP요청 start line
     private void printStartLine(HttpServletRequest request) {
         System.out.println("--- REQUEST-LINE - start ---");
         System.out.println("request.getMethod() = " + request.getMethod()); //GET
@@ -37,7 +37,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println("--- REQUEST-LINE - end ---");
         System.out.println();
     }
-
+    //HTTP요청 Header
     private void printHeaders(HttpServletRequest request) {
         System.out.println("--- Headers - start ---");
 
@@ -55,7 +55,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println();
     }
 
-    //Header 편리한 조회
+    //HTTP Header 편리한 조회
     private void printHeaderUtils(HttpServletRequest request) {
         System.out.println("--- Header 편의 조회 start ---");
         System.out.println("[Host 편의 조회]");
